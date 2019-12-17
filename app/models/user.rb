@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
     if user && user.authenticate(password)
       user
     else 
-      nil
+      user
     end
   end
 end
